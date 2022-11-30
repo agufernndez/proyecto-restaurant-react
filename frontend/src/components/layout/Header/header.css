@@ -1,0 +1,17 @@
+.header {
+    background-color: black;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.logo {
+    width: 60px;
+}
+
+.toggleMenu {
+    width: 25px;
+}
