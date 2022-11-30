@@ -1,4 +1,9 @@
-.header {
+.h1Header {
+    background-color:Thistle ;
+    color: white;
+}
+
+/* .header {
     background-color: black;
     width: 100vw;
     padding: 20px;
@@ -6,12 +11,12 @@
     align-items: center;
     justify-content: space-between;
     position: absolute;
-}
+} */
 
-.logo {
+/* .logo {
     width: 60px;
 }
 
 .toggleMenu {
     width: 25px;
-}
+} */

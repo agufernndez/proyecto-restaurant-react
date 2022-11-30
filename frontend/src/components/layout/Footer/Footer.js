@@ -1,7 +1,8 @@
+import './footer.css'
 
 const Footer = () => {
     return (
-        <h1>Soy el Footer</h1>
+        <h1 className= "footer">Soy el Footer</h1>
 
 
     //     ESTE CODIGO ES EL QUE CORRESPONDE AL FOOTER, UNA VEZ QUE FUNCIONE TODO LO PONDRÉ
