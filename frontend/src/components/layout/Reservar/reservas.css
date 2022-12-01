@@ -1,0 +1,49 @@
+
+.sectionReservas {
+    /* le agrego padding para que no se superponga con el header */
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formIndex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 340px;
+    gap: 20px;
+}
+
+.divForm {
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.inputs {
+    background:none;
+    border:none;
+    border-bottom: 0.5px solid var(--blanco);
+    text-align: center;
+    color: var(--blanco);
+    padding-bottom: 4px;
+}
+
+.labels {
+    opacity: 0.6;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.buttonReserva {
+    width: fit-content;
+    margin: 25px auto 0;
+    display: flex;
+    margin: 20px auto;
+}

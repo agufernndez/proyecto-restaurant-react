@@ -1,22 +1,24 @@
+/* 
 .h1Header {
     background-color:Thistle ;
     color: white;
-}
+} */
 
-/* .header {
-    background-color: black;
+.header {
+    /* background-color: #021222; */
     width: 100vw;
+    height: 10vh;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
-} */
+}
 
-/* .logo {
+.logo {
     width: 60px;
 }
 
 .toggleMenu {
     width: 25px;
-} */
+}
