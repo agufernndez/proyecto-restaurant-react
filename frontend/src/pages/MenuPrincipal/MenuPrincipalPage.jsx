@@ -1,8 +1,7 @@
 import React from 'react';
-import Footer from '../../components/layout/Footer/Footer';
-import Header from '../../components/layout/Header/Header';
+import { Link } from 'react-router-dom';
 import Reservar from '../../components/layout/Reservar/Reservar';
-import './MenuPrincipalPage.css'
+import './menuPrincipal.css'
 
 const MenuPrincipalPage = () => {
     return ( 
@@ -13,13 +12,16 @@ const MenuPrincipalPage = () => {
                 </section>
 
                 <ul className="section sectionLinks">
-                    <li><a href="../index.html">Inicio</a>
+                    <li>
+                        <Link to="/">Inicio</Link>
                     </li>
-                    {/* <li>>></li> */}
-                    <li><a href="./menu.html">Menu</a>
+                    <li> - </li>
+                    <li>
+                        <Link to="/Menu">Menu</Link>
                     </li>
-                    {/* <li>>></li> */}
-                    <li><a href="./menuPrincial.html" className="active">Menu Principal</a>
+                    <li> - </li>
+                    <li>
+                        <Link to="/MenuPrincipal" className="active">Menu Principal</Link>
                     </li>
                 </ul>
 

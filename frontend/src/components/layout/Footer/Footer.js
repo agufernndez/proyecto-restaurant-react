@@ -3,29 +3,24 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
-        // <h1 className= "footer">Soy el Footer</h1>
-
-
-    //     ESTE CODIGO ES EL QUE CORRESPONDE AL FOOTER, UNA VEZ QUE FUNCIONE TODO LO PONDRÉ
         <footer className='footer'>
             <img src="./assets/Logo.png" alt="Logo Food Zero" className="logo"/>
             <ul>
                 <li>
-                    {/* <Link to="/">Inicio</Link> */}
-                    {/* <a href="./index.html">Inicio</a> */}
+                    <Link to="/">Inicio</Link>
                 </li>
                 <li>
-                <a href="./pages/menu.html">Menú</a>
+                    <Link to="/Menu">Menú</Link>
                 </li>
                 <li>
-                <a href="#">Sobre Nosotros</a>
+                    <Link to="/Contactanos">Contactanos</Link>
                 </li>
                 <li>
-                <a href="./pages/vinosYcoctails.html">Vinos & Coctails</a>
+                    <Link to="/Coctails">Vinos & Coctails</Link>
                 </li>
-                <li>
+                {/* <li>
                 <a href="#">Reservas</a>
-                </li>
+                </li> */}
             </ul>
         </footer>
     )

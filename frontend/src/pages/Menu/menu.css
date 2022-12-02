@@ -7,7 +7,7 @@
 /* section titulo */
 .sectionTitulo {
     height: 35vh;
-    background-image: url("../assets/img/menu/sectionTitulo.png");
+    background-image: url("../../../public/assets/img/menu/sectionTitulo.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

@@ -6,7 +6,7 @@
     width: 100vw;
     height: 50vh;
     padding-top: 7vh ;
-    background-image: url("../assets/img/index/mainPrincipal.jpg");
+    background-image: url("../../../public/assets/img/index/mainPrincipal.jpg");
     background-size: cover;
     display: flex; 
     justify-content: space-between;
@@ -39,7 +39,7 @@
 /* section frase */
 .sectionFrase {
     /* height: 50vh; */
-    background-image: url("../assets/img/index/phrase.jpg");
+    background-image: url("../../../public/assets/img/index/phrase.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     /* gap: 300px; */
