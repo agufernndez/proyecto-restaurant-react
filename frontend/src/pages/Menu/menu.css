@@ -1,0 +1,97 @@
+/* MAIN */
+
+.section {
+    margin: 0 20px;
+}
+
+/* section titulo */
+.sectionTitulo {
+    height: 35vh;
+    background-image: url("../assets/img/menu/sectionTitulo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+/* section links */
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+a {
+    color: var(--blanco);
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.active {
+    color: var(--marron);
+    text-decoration: underline;
+}
+
+/* section menu sombra */
+.sectionMenuSombra div {
+    margin-top: 40px;
+}
+
+.h2Principal {
+    text-decoration: underline;
+    color: var(--marron);
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.h2Sombra {
+    opacity: 0.1;
+    font-size: 2.3rem;
+    /* position: absolute; */
+    /* top: 250px; */
+    position: relative;
+    bottom: 50px;
+}
+
+/* section menues */
+.sectionMenues {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.sectionMenues article {
+    margin: 40px 0;
+}
+
+.sectionMenues figure {
+    width: 80vw;
+    border: 1px solid var(--marron);
+    display: flex;
+    margin: 10px 0;
+}
+
+.sectionMenues img {
+    width: 65vw;
+    margin: 10px auto;
+    /* align-self: center; */
+    /* justify-items: center; */
+}
+
+.sectionMenues article div {
+    text-align: center;
+}
+
+.sectionMenues h3 {
+    color: var(--marron);
+    padding: 4px;
+}
+
+.sectionMenues article div a {
+    text-decoration: underline;
+
+}
