@@ -1,0 +1,149 @@
+
+/* inicio del MAIN */
+
+/* sectionPrincipal */
+.sectionPrincipal {
+    width: 100vw;
+    height: 50vh;
+    padding-top: 7vh ;
+    background-image: url("../assets/img/index/mainPrincipal.jpg");
+    background-size: cover;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionPrincipal p {
+    margin-bottom: 4vh;
+}
+
+/* section sobre nosotros */
+
+.sectionSobreNosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.leerMasdiv {
+    display: flex;
+    align-items: center;
+}
+
+.leerMas {
+    color: var(--marron);
+    font-size: 0.6rem;
+    text-decoration: none;
+}
+
+/* section frase */
+.sectionFrase {
+    /* height: 50vh; */
+    background-image: url("../assets/img/index/phrase.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* gap: 300px; */
+    display: flex;
+    align-items: center;
+}
+
+.sectionFrase img {
+    width: 50px;
+    padding-bottom: 10px;
+}
+
+.sectionFrase div {
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    font-size: var(--h2);
+
+}
+
+.sectionFrase p:nth-child(3) {
+    font-weight: bold;
+    padding-top: 10px;
+    opacity: 0.7;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/* section Menu */
+
+.sectionNuestroMenu img {
+    display: none;
+}
+
+.sectionNuestroMenu__menu {
+    border-radius: 12px;
+    background-color: var(--marron);
+    padding: 20px  ;
+}
+
+.sectionNuestroMenu h2 a {
+    color: var(--blanco);
+    
+}
+
+.sectionNuestroMenu__menu h4 {
+    font-size: var(--h4);
+    font-style: italic;
+    text-align: center;
+}
+
+.sectionNuestroMenu__menu article {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sectionNuestroMenu__menu h5 {
+    font-size: var(--h5);
+    margin: 0;
+    padding-right: 10px;
+}
+
+.sectionNuestroMenu__menu article p {
+    font-style: italic;
+}
+
+/* section galeria de fotos */
+.sectionGaleriaFotos__carrousel {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    padding: 0%;
+    gap: 10px;
+}
+
+.galeriaFoto1 {
+    width: 80vw;
+}
+
+.flecha {
+    width: 20px;
+}
+
+/* contactanos */
+.sectionContactanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionContactanos div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 25px;
+}
+
+.sectionContactanos img {
+    width: 50vw;
+}
+
+.sectionContactanos__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 16px;
+}

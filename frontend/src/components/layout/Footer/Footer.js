@@ -1,4 +1,5 @@
 import './footer.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -10,7 +11,8 @@ const Footer = () => {
             <img src="./assets/Logo.png" alt="Logo Food Zero" className="logo"/>
             <ul>
                 <li>
-                <a href="./index.html">Inicio</a>
+                    {/* <Link to="/">Inicio</Link> */}
+                    {/* <a href="./index.html">Inicio</a> */}
                 </li>
                 <li>
                 <a href="./pages/menu.html">Menú</a>
