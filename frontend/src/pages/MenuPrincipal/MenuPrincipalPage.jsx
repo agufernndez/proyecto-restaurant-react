@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../../components/layout/Footer/Footer';
 import Header from '../../components/layout/Header/Header';
 import Reservar from '../../components/layout/Reservar/Reservar';
+import './MenuPrincipalPage.css'
 
 const MenuPrincipalPage = () => {
     return ( 
