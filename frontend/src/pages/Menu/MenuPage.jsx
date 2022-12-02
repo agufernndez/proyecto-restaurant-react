@@ -9,29 +9,29 @@ const MenuPage = () => {
         <div>
             <Header/>
             <main>
-                <section class="sectionTitulo">
+                <section className="sectionTitulo">
                     <h1>Menú</h1>
                 </section>
 
-                <ul class="section sectionLinks">
+                <ul className="section sectionLinks">
                     <li><a href="../index.html">Inicio</a>
                     </li>
                     {/* <li> >> </li> */}
-                    <li><a href="" class="active">Menu</a>
+                    <li><a href="" className="active">Menu</a>
                     </li>
                     {/* <li>>></li> */}
                     <li><a href="./menuPrincial.html">Menu Principal</a>
                     </li>
                 </ul>
 
-                <section class="section sectionMenuSombra">
+                <section className="section sectionMenuSombra">
                     <div>
-                        <h2 class="h2Principal">Menú</h2>
-                        <h2 class="h2Sombra">Menú</h2>
+                        <h2 className="h2Principal">Menú</h2>
+                        <h2 className="h2Sombra">Menú</h2>
                     </div>
                 </section>
 
-                <section class="section sectionMenues">
+                <section className="section sectionMenues">
                     <article>
                         <figure>
                             <img src="../assets/img/menu/menuEntrada.jpg" alt=""/>
