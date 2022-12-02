@@ -1,0 +1,53 @@
+
+/* MAIN */
+main {
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    margin: 0 auto;
+}
+
+.imgMainContactanos {
+    display: none;
+}
+
+main div {
+    width: 100vw;
+    /* height: 90vh; */
+    margin: 10vh auto;
+    background-color: var(--marron);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    height: 30px;
+    text-align: center;
+    color: var(--marron);
+    border: none;
+    font-family: 'Noto Serif SC', serif;
+    border-radius: 8px;
+
+}
+
+textarea {
+    text-align: center;
+    color: var(--marron);
+    border: none;
+    /* border-radius: 8px; */
+
+}
+
+.button {
+    width: 30vw;
+    margin: 0 auto;
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+    border-radius: 8px;
+}
