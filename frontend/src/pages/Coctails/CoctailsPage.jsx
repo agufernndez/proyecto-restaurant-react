@@ -5,11 +5,11 @@ import Header from '../../components/layout/Header/Header';
 const CoctailsPage = () => {
     return ( 
         <div>
-            <Header/>
-            
-            <Footer/>
+            <main>
+                
+            </main>
         </div>
-     );
+        );
 }
- 
+
 export default CoctailsPage;

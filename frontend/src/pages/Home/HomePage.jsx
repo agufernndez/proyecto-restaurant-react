@@ -7,7 +7,6 @@ import "./home.css"
 const HomePage = () => {
     return ( 
         <div>
-            <Header/>
             <main>
                 <section className="section sectionPrincipal">
                     <div>
@@ -137,10 +136,7 @@ const HomePage = () => {
                     </button>
                 </section>
             </main>
-            <Footer/>
-            
-
-    </div>
+        </div>
 
     );
 }

@@ -6,8 +6,6 @@ import './contactanos.css'
 const ContactanosPage = () => {
     return ( 
         <div>
-            <Header/>
-
             <main>
                 <div>
                     <h1>Contactanos</h1>
@@ -21,8 +19,6 @@ const ContactanosPage = () => {
                 </div>
                 {/* <img src="../assets/img/contactanos/imgMainContactanos.png" alt="" className="imgMainContactanos"/> */}
             </main>
-
-            <Footer/>
         </div>
      );
 }

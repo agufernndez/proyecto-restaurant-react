@@ -7,7 +7,6 @@ import './menu.css';
 const MenuPage = () => {
     return ( 
         <div>
-            <Header/>
             <main>
                 <section className="sectionTitulo">
                     <h1>Menú</h1>
@@ -96,8 +95,6 @@ const MenuPage = () => {
                 <Reservar/>
 
             </main>
-            <Footer/>
-
         </div>
      );
 }

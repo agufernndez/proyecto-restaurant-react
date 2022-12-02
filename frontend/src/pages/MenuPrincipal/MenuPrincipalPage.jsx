@@ -7,7 +7,6 @@ import './MenuPrincipalPage.css'
 const MenuPrincipalPage = () => {
     return ( 
         <div>
-            <Header/>
             <main>
                 <section className="sectionTitulo">
                     <h1>Menú Principal</h1>
@@ -69,8 +68,6 @@ const MenuPrincipalPage = () => {
                 <Reservar/>
 
             </main>
-
-            <Footer/>
         </div>
      );
 }
