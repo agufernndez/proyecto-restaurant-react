@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Reservar from '../../components/layout/Reservar/Reservar';
 import "./home.css"
 
@@ -44,7 +45,9 @@ const HomePage = () => {
 
                 <section className="section sectionNuestroMenu">
                     <img src="./assets/img/index/ourMenu.jpg" alt="Imagen de sectionNuestroMenu" className="fotoMenu"/>
-                    <h2><a href="./pages/menu.html">Nuestro Menu</a> </h2>
+                    {/* <h2><a href="./pages/menu.html">Nuestro Menu</a> </h2> */}
+                    <h2><Link to="/menu">Nuestro Menu</Link></h2>
+
                     {/*<div>
                     <img src="./assets/icon/leftMenu.svg" alt="" className="flecha"/>
                     <img src="./assets/icon/rightMenu.svg" alt="" className="flecha"/>
@@ -130,7 +133,7 @@ const HomePage = () => {
                     </div>
                     </div>
                     <button>
-                    <a href="./pages/contactanos.html">Contactanos</a> 
+                    <Link to="/contactanos">Contactanos</Link> 
                     </button>
                 </section>
             </main>
