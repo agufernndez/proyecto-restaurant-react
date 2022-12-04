@@ -22,3 +22,18 @@
 .toggleMenu {
     width: 25px;
 }
+
+@media screen and (min-width: 768px) {
+
+    .header {
+        padding: 40px 10vw;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .toggleMenu {
+        width: 30px;
+    }
+}

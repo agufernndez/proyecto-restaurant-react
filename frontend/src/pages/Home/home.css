@@ -1,10 +1,14 @@
 
 /* inicio del MAIN */
+/* .homePage {
+    display: flex;
+    flex-direction: row;
+} */
 
 /* sectionPrincipal */
 .sectionPrincipal {
     width: 100vw;
-    height: 50vh;
+    height: 62vh;
     padding-top: 7vh ;
     background-image: url("../../../public/assets/img/index/mainPrincipal.jpg");
     background-size: cover;
@@ -78,6 +82,7 @@
     border-radius: 12px;
     background-color: var(--marron);
     padding: 20px  ;
+    position: relative;
 }
 
 .sectionNuestroMenu h2 a {
@@ -146,4 +151,104 @@
     flex-direction: column;
     text-align: center;
     line-height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+   
+    body {
+        overflow-x: hidden;
+    }
+        /* MAIN */
+    /* sectionPrincipal */
+    .sectionPrincipal {
+        height: 100vh;
+    }
+
+    .sectionPrincipal p {
+        margin-bottom: 8vh;
+        width: 60vw;
+    }
+
+    /* section sobre nosotros */
+
+    .sectionSobreNosotros {
+        height: 45vh;
+    }
+
+    .leerMas {
+        font-size: 0.8rem;
+    }
+
+    /* section frase */
+    .sectionFrase {
+        height: 55vh;
+    }
+
+    .sectionFrase img {
+        width: 60px;
+    }
+
+    .sectionFrase div {
+        width: 60vw;
+        font-size: 1.5rem;
+    }
+
+    .sectionFrase p:nth-child(3) {
+        font-size: 1rem;
+    }
+
+    /* section menu */
+ 
+    .sectionNuestroMenu h2 {
+        text-align: start;
+    }
+
+    .sectionNuestroMenu img {
+        margin-top: 15vh;
+        margin-left: 4vw;
+        display: flex;
+        width: 80vw;
+        z-index: 0;
+        position: absolute;
+        left: 0vw;
+        border: 6px double var(--marron);
+        
+    }
+
+    .sectionNuestroMenu__menu {
+        width: 40vw;
+        margin-top: 15vh;
+        margin-left: 45vw;
+
+        z-index: 2;
+
+    }
+
+    .sectionNuestroMenu__menu h4 {
+        text-decoration: underline;
+    }
+
+    /* section galeria de fotos */
+    .sectionGaleriaFotos {
+        padding: 0;
+
+    }
+
+    .sectionGaleriaFotos__carrousel {
+        margin: 0 auto;
+    }
+
+    .galeriaFoto1 {
+        width: 60vw;
+        
+    }
+
+    .flecha {
+        width: 30px;
+    }
+
+    /* contactanos */
+    .sectionContactanos img {
+        width: 25vw;
+    }
 }

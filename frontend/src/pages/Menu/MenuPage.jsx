@@ -1,25 +1,27 @@
 import React from 'react';
-import Footer from '../../components/layout/Footer/Footer';
-import Header from '../../components/layout/Header/Header';
+import { Link } from 'react-router-dom';
 import Reservar from '../../components/layout/Reservar/Reservar';
 import './menu.css';
 
 const MenuPage = () => {
     return ( 
         <div>
-            <main>
+            <main className="menuPage">
                 <section className="sectionTitulo">
                     <h1>Menú</h1>
                 </section>
 
                 <ul className="section sectionLinks">
-                    <li><a href="../index.html">Inicio</a>
+                    <li>
+                        <Link to="/">Inicio</Link>
                     </li>
-                    {/* <li> >> </li> */}
-                    <li><a href="" className="active">Menu</a>
+                    <li> - </li>
+                    <li>
+                        <Link to="/menu">Menu</Link>   
                     </li>
-                    {/* <li>>></li> */}
-                    <li><a href="./menuPrincial.html">Menu Principal</a>
+                    <li> - </li>
+                    <li>
+                        <Link to="/menuPrincipal">Menu Principal</Link>   
                     </li>
                 </ul>
 
@@ -33,7 +35,7 @@ const MenuPage = () => {
                 <section className="section sectionMenues">
                     <article>
                         <figure>
-                            <img src="../assets/img/menu/menuEntrada.jpg" alt=""/>
+                            <img src="../../../assets/../../../assets/img/menu/menuEntrada.jpg" alt=""/>
                         </figure>
                         <div>
                             <h3>Entradas</h3>
@@ -43,7 +45,7 @@ const MenuPage = () => {
 
                     <article>
                         <figure>
-                            <img src="../assets/img/menu/menuDesayuno.jpg" alt=""/>
+                            <img src="../../../assets/img/menu/menuDesayuno.jpg" alt=""/>
                         </figure>
                         <div>
                             <h3>Desayuno</h3>
@@ -53,7 +55,7 @@ const MenuPage = () => {
 
                     <article>
                         <figure>
-                            <img src="../assets/img/menu/menuAlmuerzo.jpg" alt=""/>
+                            <img src="../../../assets/img/menu/menuAlmuerzo.jpg" alt=""/>
                         </figure>
                         <div>
                             <h3>Almuerzo</h3>
@@ -63,7 +65,7 @@ const MenuPage = () => {
 
                     <article>
                         <figure>
-                            <img src="../assets/img/menu/menuPrincipal.jpg" alt=""/>
+                            <img src="../../../assets/img/menu/menuPrincipal.jpg" alt=""/>
                         </figure>
                         <div>
                             <h3>Plato Principal</h3>
@@ -73,7 +75,7 @@ const MenuPage = () => {
 
                     <article>
                         <figure>
-                            <img src="../assets/img/menu/menuPostre.jpg" alt=""/>
+                            <img src="../../../assets/img/menu/menuPostre.jpg" alt=""/>
                         </figure>
                         <div>
                             <h3>Postres</h3>
@@ -83,7 +85,7 @@ const MenuPage = () => {
 
                     <article>
                         <figure>
-                            <img src="../assets/img/menu/menuPanes.jpg" alt=""/>
+                            <img src="../../../assets/img/menu/menuPanes.jpg" alt=""/>
                         </figure>
                         <div>
                             <h3>Panes</h3>

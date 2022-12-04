@@ -47,3 +47,30 @@
     display: flex;
     margin: 20px auto;
 }
+
+@media screen and (min-width: 768px) {
+     /* section reservas */
+
+    .formIndex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90vw;
+        gap: 20px;
+    }
+
+    .inputs {
+        font-size: 1rem;
+        padding-bottom: 4px;
+    }
+    
+    .labels {
+        font-size: 0.8rem;
+    }
+
+    .buttonReserva {
+        font-size: 0.8rem;
+        padding: 8px;
+        height: 35px;
+    }
+}

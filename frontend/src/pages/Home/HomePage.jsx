@@ -1,13 +1,11 @@
 import React from 'react';
-import Footer from '../../components/layout/Footer/Footer';
-import Header from '../../components/layout/Header/Header';
 import Reservar from '../../components/layout/Reservar/Reservar';
 import "./home.css"
 
 const HomePage = () => {
     return ( 
         <div>
-            <main>
+            <main className="homePage">
                 <section className="section sectionPrincipal">
                     <div>
                     <h1>Ingredientes de calidad. <br/>
@@ -15,7 +13,7 @@ const HomePage = () => {
                         Pasión asegurada.</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget dolor in felis lobortis gravida et et leo.</p>
                     <button>
-                        {/* <a href="./index.html#reservas">Reservar Ahora</a>  */}
+                        <a href="">Reservar Ahora</a> 
                     </button>
                     </div>
                 </section>

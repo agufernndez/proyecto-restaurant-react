@@ -1,29 +1,37 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import NavBar from '../NavBar/NavBar';
 import './footer.css'
-import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
-        <footer className='footer'>
-            <img src="./assets/Logo.png" alt="Logo Food Zero" className="logo"/>
-            <ul>
-                <li>
-                    <Link to="/">Inicio</Link>
-                </li>
-                <li>
-                    <Link to="/Menu">Menú</Link>
-                </li>
-                <li>
-                    <Link to="/Contactanos">Contactanos</Link>
-                </li>
-                <li>
-                    <Link to="/Coctails">Vinos & Coctails</Link>
-                </li>
-                {/* <li>
-                <a href="#">Reservas</a>
-                </li> */}
-            </ul>
-        </footer>
+        <div>
+            <footer className='footer'>
+                <img src="./assets/Logo.png" alt="Logo Food Zero" className="logo"/>
+                <h1>Soy el footer</h1>
+                {/* <NavBar/> */}
+                
+                <ul>
+                    {/* <li>
+                        <Link to="/">Inicio</Link>
+                    </li>
+                    <li>
+                        <Link to="/menu">Menú</Link>
+                    </li>
+                    <li>
+                        <Link to="/contactanos">Contactanos</Link>
+                    </li>
+                    <li>
+                        <Link to="/coctails">Vinos & Coctails</Link>
+                    </li>
+                    <li>
+                    <a href="#">Reservas</a>
+                    </li> */}
+                </ul>
+            </footer>
+        </div>
+
     )
 }
 
-export default Footer
+export default Footer;

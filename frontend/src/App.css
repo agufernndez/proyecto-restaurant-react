@@ -12,11 +12,103 @@
 * {
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 
 .App {
   background-color: var(--azulOscuro);
   font-family: 'Noto Serif SC', serif;
   font-size: 62.5%;
   color: var(--blanco);
-  
+}
+
+h1 {
+    font-size: var(--h1);
+    font-weight: 200;
+    line-height: 36px;
+}
+
+h2 {
+    text-decoration:underline;
+    font-size: var(--h2);
+    text-align: center;
+    opacity: 0.9;
+}
+
+p {
+    opacity: 0.9;
+}
+
+section {
+    padding: 20px;
+    /* width: 90vw; */
+    font-size: 0.7rem;
+
+}
+
+button {
+    background: none;
+    border: 1px solid var(--marron);
+    border-radius: 4px;
+    height: 30px;
+
+}
+
+button:hover {
+    background-color: var(--marron);
+    color: var(--blanco);
+}
+
+button a {
+    text-decoration: none;
+    color: var(--marron);
+    font-family: 'Bodoni Moda', serif;
+    background: none;
+    font-size: 0.8rem;
+
+}
+
+button a:hover {
+    text-decoration: underline;   
+    color: var(--blanco);
+
+}
+
+i {
+    font-size: 0.8rem;
+    color: var(--marron);
+    padding: 8px;
+}
+/* inicio del HEADER */
+
+
+/* pantallas grandes */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+    line-height: 46px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  button {
+    height: 35px;
+  }
+
+  button a {
+    font-size: 1rem;
+  }
+
+  i {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  section {
+    padding: 20px 10vw;
+    font-size: 1rem;    
+  }    
 }

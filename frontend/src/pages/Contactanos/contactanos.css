@@ -1,17 +1,20 @@
 
 /* MAIN */
-main {
+.contactanosPage {
     width: 80vw;
-    height: 70vh;
     display: flex;
     margin: 0 auto;
+}
+
+.contactanosPage h1 {
+    text-align: center;
 }
 
 .imgMainContactanos {
     display: none;
 }
 
-main div {
+.contactanosPage div {
     width: 100vw;
     /* height: 90vh; */
     margin: 10vh auto;
@@ -20,14 +23,14 @@ main div {
     border-radius: 8px;
 }
 
-main form {
+.contactanosPage form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-input {
-    height: 30px;
+.contactanosPage input {
+    height: 36px;
     text-align: center;
     color: var(--marron);
     border: none;
@@ -36,12 +39,11 @@ input {
 
 }
 
-textarea {
+.contactanosPage textarea {
     text-align: center;
-    color: var(--marron);
+    padding-top: 10px;
     border: none;
-    /* border-radius: 8px; */
-
+    border-radius: 8px;
 }
 
 .button {
@@ -50,4 +52,55 @@ textarea {
     background-color: var(--azulOscuro);
     color: var(--blanco);
     border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .contactanosPage h1 {
+        font-size: 2.4rem;
+        line-height: 46px;
+    }
+    
+    .contactanosPage h2 {
+        font-size: 2rem;
+    }
+
+/* MAIN */
+    .contactanosPage {
+        width: 60vw;
+        padding-top: 15vh;
+        padding-bottom: 7vh;
+    }
+
+    .imgMainContactanos {
+        display: flex;
+        width: 30vw;
+    }
+
+    .contactanosPage div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0 30px 30px;
+        border-radius: 0px;
+        /* border: 6px double #FFFFFF; */
+    }
+
+    .contactanosPage input {
+        font-size: 0.8rem;
+        border-radius: 0px;
+
+    }
+
+    .contactanosPage textarea {
+        font-size: 0.8rem;
+        border-radius: 0px;
+
+    }
+
+    .button {
+        width: 8vw;
+        border-radius: 8px;
+    }
 }

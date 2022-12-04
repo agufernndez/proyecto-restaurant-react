@@ -1,12 +1,11 @@
 import React from 'react';
-import Footer from '../../components/layout/Footer/Footer';
-import Header from '../../components/layout/Header/Header';
+
 import './contactanos.css'
 
 const ContactanosPage = () => {
     return ( 
         <div>
-            <main>
+            <main className="contactanosPage">
                 <div>
                     <h1>Contactanos</h1>
                     <form action="">
@@ -17,10 +16,10 @@ const ContactanosPage = () => {
                     </form>
 
                 </div>
-                {/* <img src="../assets/img/contactanos/imgMainContactanos.png" alt="" className="imgMainContactanos"/> */}
+                <img src="../../../assets/img/contactanos/imgMainContactanos.png" alt="" className="imgMainContactanos"/>
             </main>
         </div>
-     );
+    );
 }
- 
+
 export default ContactanosPage;

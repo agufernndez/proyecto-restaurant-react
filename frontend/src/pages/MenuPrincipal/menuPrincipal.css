@@ -1,8 +1,10 @@
 /* MAIN */
 
-.section {
+/* .section {
     margin: 0 20px;
-}
+} */
+/* LO SACO PORQUE SINO ME HACE OVERFLOW HORIZONTAL */
+
 
 /* section titulo */
 .sectionTitulo {
@@ -40,6 +42,7 @@ a {
 /* section menu sombra */
 .sectionMenuSombra div {
     margin-top: 40px;
+    height: 5vh;
 }
 
 .h2Principal {
@@ -55,7 +58,7 @@ a {
     /* position: absolute; */
     /* top: 250px; */
     position: relative;
-    bottom: 50px;
+    bottom: 70px;
 }
 
 /* section menues principal */
@@ -83,7 +86,7 @@ a {
 }
 
 .sectionMenuesPrincipal article h4 {
-    width: 40vw;
+    width: 60vw;
     padding-top: 8px;
     font-size: 0.7rem;
     opacity: 0.6; 
