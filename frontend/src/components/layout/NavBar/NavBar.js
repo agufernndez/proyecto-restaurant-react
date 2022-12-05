@@ -10,9 +10,6 @@ const NavBar = () => {
                     <li><Link to="/menu">Menú</Link></li>
                     <li><Link to="/contactanos">Contactanos</Link></li>
                     <li><Link to="/coctails">Vinos & Coctails</Link></li>
-                    {/* <li>
-                    <a href="#">Reservas</a>
-                    </li> */}
                 </ul>
             </div>
         </nav>

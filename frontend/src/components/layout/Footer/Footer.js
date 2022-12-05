@@ -11,23 +11,12 @@ const Footer = () => {
                 <h1>Soy el footer</h1>
                 {/* <NavBar/> */}
                 
-                <ul>
-                    {/* <li>
-                        <Link to="/">Inicio</Link>
-                    </li>
-                    <li>
-                        <Link to="/menu">Menú</Link>
-                    </li>
-                    <li>
-                        <Link to="/contactanos">Contactanos</Link>
-                    </li>
-                    <li>
-                        <Link to="/coctails">Vinos & Coctails</Link>
-                    </li>
-                    <li>
-                    <a href="#">Reservas</a>
-                    </li> */}
-                </ul>
+                {/* <ul>
+                        <li><Link to="/">Inicio</Link></li>
+                        <li><Link to="/menu">Menu</Link></li>
+                        <li><Link to="/contactanos">Contactanos</Link></li>
+                        <li><Link to="/coctails">Vinos & Coctails</Link></li>
+                </ul> */}
             </footer>
         </div>
 
