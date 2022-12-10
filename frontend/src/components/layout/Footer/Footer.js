@@ -8,15 +8,14 @@ const Footer = () => {
         <div>
             <footer className='footer'>
                 <img src="./assets/Logo.png" alt="Logo Food Zero" className="logo"/>
-                <h1>Soy el footer</h1>
                 {/* <NavBar/> */}
                 
-                {/* <ul>
+                <ul>
                         <li><Link to="/">Inicio</Link></li>
                         <li><Link to="/menu">Menu</Link></li>
                         <li><Link to="/contactanos">Contactanos</Link></li>
                         <li><Link to="/coctails">Vinos & Coctails</Link></li>
-                </ul> */}
+                </ul>
             </footer>
         </div>
 

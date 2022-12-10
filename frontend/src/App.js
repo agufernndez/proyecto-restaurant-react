@@ -23,8 +23,8 @@ function App() {
           <Route path="/menu" element={<Menu/>}/>
           <Route path="/menuprincipal" element={<MenuPrincipal/>}/>
         </Routes>
+        <Footer/> 
       </BrowserRouter>
-      <Footer/>
     </div>
   );
 }
