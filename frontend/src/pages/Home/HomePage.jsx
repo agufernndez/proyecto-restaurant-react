@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../../components/layout/Button/Button';
 import Reservar from '../../components/layout/Reservar/Reservar';
 import "./home.css"
 
@@ -9,13 +10,14 @@ const HomePage = () => {
             <main className="homePage">
                 <section className="section sectionPrincipal">
                     <div>
-                    <h1>Ingredientes de calidad. <br/>
-                        Sabores inigualables. <br/>
-                        Pasión asegurada.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget dolor in felis lobortis gravida et et leo.</p>
-                    <button>
-                        <a href="">Reservar Ahora</a> 
-                    </button>
+                        <h1>Ingredientes de calidad. <br/>
+                            Sabores inigualables. <br/>
+                            Pasión asegurada.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget dolor in felis lobortis gravida et et leo.</p>
+                        {/* <button>
+                            <a href="">Reservar Ahora</a> 
+                        </button> */}
+                        <Button text="Reservar Ahora" link="/contactanos"/>
                     </div>
                 </section>
 

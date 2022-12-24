@@ -1,0 +1,28 @@
+.button {
+    background: none;
+    border: 1px solid var(--marron);
+    border-radius: 4px;
+    height: 30px;
+    width:fit-content;
+
+}
+
+.button:hover {
+    background-color: var(--marron);
+    color: var(--blanco);
+}
+
+.button a {
+    text-decoration: none;
+    color: var(--marron);
+    font-family: 'Bodoni Moda', serif;
+    background: none;
+    font-size: 0.8rem;
+
+}
+
+.button a:hover {
+    text-decoration: underline;   
+    color: var(--blanco);
+
+}
