@@ -134,9 +134,10 @@ const HomePage = () => {
                         <p><i className="fa-regular fa-phone"></i>+54 9 299 1234567</p>
                     </div>
                     </div>
-                    <button>
+                    {/* <button>
                     <Link to="/contactanos">Contactanos</Link> 
-                    </button>
+                    </button> */}
+                    <Button text="Contactanos" link="/contactanos"/>
                 </section>
             </main>
         </div>

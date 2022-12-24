@@ -1,3 +1,4 @@
+import Button from "../Button/Button"
 import "./reservas.css"
 
 
@@ -6,7 +7,7 @@ const Reservar = () => {
         // <h1>Formulario de reservas</h1>
         <section className="section sectionReservas" id="reservas">
             <h2>Reservas</h2>
-            <form action="" >
+            <form action="" className="form">
                 <div className="formIndex">
                     <div className="divForm">
                         <label for="name" className="labels">Nombre</label>
@@ -33,13 +34,11 @@ const Reservar = () => {
                         <input type="time"  name="time" id="time" className="inputs" placeholder="21:00"/>
                     </div>
                 </div>
-                <button className="buttonReserva">
+                <Button text="Reservar" link="/"/>
+                {/* <button className="buttonReserva">
                 <a href="#">Reservar</a> 
-                </button>
+                </button> */}
             </form>
-
-            
-
         </section>
     )
 }
