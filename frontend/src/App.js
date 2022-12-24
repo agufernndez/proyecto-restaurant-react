@@ -3,7 +3,7 @@ import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 // import Header from "./components/layout/Header/Header"
-import Footer from './components/layout/HeaderFooter/HeaderFooter'
+import HeaderFooter from './components/layout/HeaderFooter/HeaderFooter'
 
 import HomePage from "./pages/Home/HomePage"
 import Coctails from "./pages/Coctails/CoctailsPage"
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Footer/>
+        <HeaderFooter/>
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/contactanos" element={<Contactanos/>}/>
@@ -23,7 +23,7 @@ function App() {
           <Route path="/menu" element={<Menu/>}/>
           <Route path="/menuprincipal" element={<MenuPrincipal/>}/>
         </Routes>
-        <Footer/> 
+        <HeaderFooter/> 
       </BrowserRouter>
     </div>
   );
