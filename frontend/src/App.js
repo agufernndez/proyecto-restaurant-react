@@ -2,8 +2,8 @@ import './App.css';
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
-import Header from "./components/layout/Header/Header"
-import Footer from './components/layout/Footer/Footer'
+// import Header from "./components/layout/Header/Header"
+import Footer from './components/layout/HeaderFooter/HeaderFooter'
 
 import HomePage from "./pages/Home/HomePage"
 import Coctails from "./pages/Coctails/CoctailsPage"
@@ -14,8 +14,8 @@ import MenuPrincipal from "./pages/MenuPrincipal/MenuPrincipalPage"
 function App() {
   return (
     <div className="App">
-      <Header/>
       <BrowserRouter>
+        <Footer/>
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/contactanos" element={<Contactanos/>}/>
