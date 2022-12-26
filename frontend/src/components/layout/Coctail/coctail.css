@@ -1,0 +1,19 @@
+.coctailDiv {
+    width: 30vw;
+
+}
+.coctailImg {
+    width: 30vw;
+    border: solid 1px var(--marron);
+
+}
+
+.coctailH3 {
+    color: var(--marron);
+    text-align: center;
+}
+
+.coctailP {
+    text-decoration: underline;
+    text-align: center;
+}

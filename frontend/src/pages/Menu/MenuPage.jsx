@@ -15,11 +15,11 @@ const MenuPage = () => {
                     <li>
                         <Link to="/">Inicio</Link>
                     </li>
-                    <li> - </li>
+                    <li> » </li>
                     <li>
                         <Link to="/menu">Menu</Link>   
                     </li>
-                    <li> - </li>
+                    <li> » </li>
                     <li>
                         <Link to="/menuPrincipal">Menu Principal</Link>   
                     </li>

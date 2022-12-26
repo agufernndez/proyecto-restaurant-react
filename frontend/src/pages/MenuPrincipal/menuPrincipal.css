@@ -50,15 +50,16 @@ a {
     color: var(--marron);
     font-size: 1.3rem;
     position: relative;
+    text-align: left;
 }
 
 .h2Sombra {
     opacity: 0.1;
     font-size: 2.3rem;
-    /* position: absolute; */
-    /* top: 250px; */
     position: relative;
-    bottom: 70px;
+    bottom: 80px;
+    text-align: left;
+
 }
 
 /* section menues principal */
