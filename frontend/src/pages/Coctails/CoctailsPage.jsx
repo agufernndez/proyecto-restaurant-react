@@ -20,7 +20,7 @@ const CoctailsPage = () => {
                     </li>
                     <li> » </li>
                     <li>
-                        <Link to="/menu">Vinos & Coctails</Link>   
+                        <Link to="/coctails">Vinos & Coctails</Link>   
                     </li>
                     
                 </ul>
@@ -41,15 +41,11 @@ const CoctailsPage = () => {
                 <section className='section sectionCartaCoctail'>
                     <h2>Elegí tu vino</h2>
                     <section className='cartaCoctail'>
-                        <div>
                             <Coctail img="../../../assets/img/vinos&cocteles/image12.jpg" nombre="France"/>
-                            <Coctail img="../../../assets/img/vinos&cocteles/image12.jpg" nombre="France"/>
-                            <Coctail img="../../../assets/img/vinos&cocteles/image12.jpg" nombre="France"/>
-                            <Coctail img="../../../assets/img/vinos&cocteles/image12.jpg" nombre="France"/>
-                        </div>
-
+                            <Coctail img="../../../assets/img/vinos&cocteles/image12-2.jpg" nombre="Italy"/>
+                            <Coctail img="../../../assets/img/vinos&cocteles/image11.jpg" nombre="German"/>
+                            <Coctail img="../../../assets/img/vinos&cocteles/image10.jpg" nombre="Ruby"/>
                     </section>
-
                 </section>
 
                 <Reservar/>

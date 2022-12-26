@@ -1,19 +1,44 @@
+
 .coctailDiv {
-    width: 30vw;
-
+    width: 80vw;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.coctailImg {
-    width: 30vw;
-    border: solid 1px var(--marron);
 
+.sectionCartaCoctail {
+    padding: 0px;
+}
+
+.coctailImg {
+    width: 80vw;
+    border: solid 1px var(--marron);
 }
 
 .coctailH3 {
     color: var(--marron);
     text-align: center;
+    font-size: 1rem;
+
 }
 
 .coctailP {
     text-decoration: underline;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .coctailDiv {
+        width: 40vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .coctailImg {
+        width: 40vw;
+        border: solid 1px var(--marron);
+    }
 }

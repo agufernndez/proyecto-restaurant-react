@@ -1,27 +1,55 @@
+
+.sectionMenuSombra {
+    height: fit-content;
+}
+
 .sectionVinos {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .sectionVinos img {
-    width: 40vw;
+    width: 80vw;
 }
 
 .sectionVinos div {
-    width: 40vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px auto 0;
 }
 
-.sectionMenuSombra {
-    height: fit-content;
+.sectionVinos div p {
+    font-size: 1rem;
 }
 
 
 @media screen and (min-width: 768px) {
     .sectionMenuSombra {
         padding-bottom: 0px;
+    }
+
+    .sectionVinos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sectionVinos img {
+        width: 40vw;
+    }
+
+    .sectionVinos div {
+        width: 35vw;
+    }
+
+    .cartaCoctail {
+        /* width: 100vw; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        gap:25px;
     }
 }
