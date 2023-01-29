@@ -1,8 +1,37 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('../images/galleryCenter.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p, h1 {
+  color: #00B7FF;
+  background-color: white;
+  text-align: center;
+  width: auto;
+}
+
+.datosIncorrectos {
+  color: red;
+}
+
+.divLogin {
+  text-align: center;
+}
+
+.divLogin label {
+  background-color: white;
+}
+
+.botonCerrarSesion {
+  background-color: red;
+  /* border-radius: 8px; */
+  /* height: 20px; */
 }
 
 a {
-  color: #00B7FF;
+  color: black;
+  /* text-align: center; */
 }
