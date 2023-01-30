@@ -21,10 +21,10 @@ router.post('/', async (req, res, next) => {
         var data = await usuariosModel.getUserByUserNameAndPassword(usuario, password);
 
         if (data != undefined) {
-// ACTIVAR CUANDO SOLUCIONE LO DE LA BASE DE DATOS. AHORA LO DESACTIVE PORQUE SINO NO PUEDO ENTRAR A /ADMIN/NOVEDADES
+// ACTIVAR CUANDO SOLUCIONE LO DE LA BASE DE DATOS. AHORA LO DESACTIVE PORQUE SINO NO PUEDO ENTRAR A /ADMIN/menuSemanal
             req.session.id_usuario = data.id;
             req.session.nombre = data.usuario;
-            res.redirect('/admin/novedades');
+            res.redirect('/admin/menuSemanal');
         } else {
             res.render('./admin/login', {
                 layout: 'admin/login',

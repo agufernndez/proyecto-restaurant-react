@@ -10,7 +10,7 @@ var session = require('express-session')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
-var adminRouter = require('./routes/admin/novedades');
+var adminRouter = require('./routes/admin/menuSemanal');
 
 
 
@@ -50,7 +50,7 @@ secured = async (req, res, next) => {
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', secured, adminRouter);// poner 'secured' en esta linea es para que solo puedan acceder a la seccion de novedades los usuarios que ingresaron sesion. si no ingresaron sesion y ponen /novedades, los redirecciona automaticamente a /admin/login
+app.use('/admin/menuSemanal', secured, adminRouter);// poner 'secured' en esta linea es para que solo puedan acceder a la seccion de menuSemanal los usuarios que ingresaron sesion. si no ingresaron sesion y ponen /menuSemanal, los redirecciona automaticamente a /admin/login
 
 
 // catch 404 and forward to error handler

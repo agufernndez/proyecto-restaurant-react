@@ -1,0 +1,10 @@
+<h2>Agregar Plato Principal</h2>
+<form action="/admin/menuSemanal/agregar" method="post">
+        <input type="text" name="nombreDelPlato" id="" placeholder="Nombre del Plato Principal">
+        <input type="text" name="descripcion" id="" placeholder="Descripción del Plato Principal">
+        <input type="text" name="precio" id="" placeholder="$">
+        <button type="submit">Agregar</button>
+</form>
+{{#if error}}
+    <p>{{message}}</p>
+{{/if}}

@@ -6,11 +6,20 @@ body {
   background-repeat: no-repeat;
 }
 
-p, h1 {
-  color: #00B7FF;
-  background-color: white;
+.subtitulo {
   text-align: center;
-  width: auto;
+}
+
+p, h1 {
+  color: white;
+  /* background-color: white; */
+}
+
+h1 {
+  font-size: 35px;
+  text-decoration: underline;
+  text-align: center;
+
 }
 
 .datosIncorrectos {
@@ -32,6 +41,36 @@ p, h1 {
 }
 
 a {
-  color: black;
+  color: white;
   /* text-align: center; */
+}
+
+.tituloTabla {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.botonAgregarPlato {
+  background-color: green;
+}
+
+h2 {
+  color: white;;
+}
+
+.divTabla {
+  width: 70vw;
+  margin: 10px auto;
+  color: white;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+}
+
+i {
+  color: white;
+  font-size: 20px;
+  margin: 10px ;
 }
