@@ -46,4 +46,11 @@ router.post('/agregar', async (req, res, next) => {
     }
 })
 
+// eliminar plato principal
+router.get('/eliminar/:id', async (req, res, next) => {
+    var id = req.params.id;
+    await menuSemanalModel.deletePlatoPrincipalById(id);
+    res.redirect('/admin/menuSemanal')
+});
+
 module.exports = router;

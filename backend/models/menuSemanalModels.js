@@ -18,4 +18,11 @@ async function insertMenu(obj) {
     }
 }
 
-module.exports = {getMenuSemanal, insertMenu}
+// para BORRAR un plato principal
+async function deletePlatoPrincipalById (id) {
+    var query = 'delete from menuSemanal where id = ?';
+    var rows = await pool.query(query, [id]);
+    return rows;
+}
+
+module.exports = {getMenuSemanal, insertMenu, deletePlatoPrincipalById}
