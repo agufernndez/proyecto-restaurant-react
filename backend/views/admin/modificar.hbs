@@ -1,5 +1,5 @@
 <h2>Modificar Plato Principal</h2>
-<form action="/admin/menuSemanal/modificar" method="post">
+<form action="/admin/menuSemanal/modificar" method="post" enctype="multipart/form-data">
         <input type="hidden" value="{{menuSemanal.id}}" name="id">
         <input type="text" name="nombreDelPlato" id="" value="{{menuSemanal.nombreDelPlato}}">
         {{!-- <input type="text" name="descripcion" id="" value="{{menuSemanal.descripcion}}"> --}}

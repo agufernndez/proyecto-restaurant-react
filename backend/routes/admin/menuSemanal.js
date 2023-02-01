@@ -3,6 +3,10 @@ var express = require('express');
 const { isDeepStrictEqual } = require('util');
 var router = express.Router();
 var menuSemanalModel = require('../../models/menuSemanalModels')
+var util = require('util');
+var cloudinary = require('cloudinary').v2;
+const uploader = util.promisify(cloudinary.uploader.upload);
+
 
 // para listar menuSemanal
 router.get('/', async function (req, res, next) {
@@ -25,9 +29,18 @@ router.get('/agregar', (req, res, next) => {
 
 router.post('/agregar', async (req, res, next) => {
     try {
+        let img_id = '';
+        if (req.files && Object.keys(req.files).length > 0) {
+            imagen = req.files.imagen;
+            img_id = (await uploader(imagen.tempFilePath)).public_id;
+        }
+
         // hago la validacion para que se completen todos los campos
         if (req.body.nombreDelPlato != '' && req.body.descripcion != '' && req.body.precio != '') {
-            await menuSemanalModel.insertMenu(req.body);
+            await menuSemanalModel.insertMenu({
+                ...req.body,
+                img_id
+            });
             res.redirect('/admin/menuSemanal')
         } else {
             // en caso que no se hayan completado todos los campos:
