@@ -1,0 +1,12 @@
+<h2>Modificar Plato Principal</h2>
+<form action="/admin/menuSemanal/modificar" method="post">
+        <input type="hidden" value="{{menuSemanal.id}}" name="id">
+        <input type="text" name="nombreDelPlato" id="" value="{{menuSemanal.nombreDelPlato}}">
+        {{!-- <input type="text" name="descripcion" id="" value="{{menuSemanal.descripcion}}"> --}}
+        <textarea name="descripcion" id="" cols="30" rows="10">{{menuSemanal.descripcion}}</textarea>
+        <input type="text" name="precio" id="" value="{{menuSemanal.precio}}">
+        <button type="submit">Modificar</button>
+</form>
+{{#if error}}
+    <p>{{message}}</p>
+{{/if}}
