@@ -1,5 +1,6 @@
 const { response } = require('express');
 var express = require('express');
+const { isDeepStrictEqual } = require('util');
 var router = express.Router();
 var menuSemanalModel = require('../../models/menuSemanalModels')
 
@@ -48,9 +49,44 @@ router.post('/agregar', async (req, res, next) => {
 
 // eliminar plato principal
 router.get('/eliminar/:id', async (req, res, next) => {
-    var id = req.params.id;
+    let id = req.params.id;
     await menuSemanalModel.deletePlatoPrincipalById(id);
     res.redirect('/admin/menuSemanal')
 });
+
+// modificar plato principal
+router.get('/modificar/:id', async (req, res, next) => {
+    let id = req.params.id;
+    let menuSemanal = await menuSemanalModel.getPlatoPrincipalById(id);
+
+    res.render('admin/modificar', {
+        layout: 'admin/layout',
+        menuSemanal
+    })
+});
+
+// boton de modificar
+router.post('/modificar', async (req, res, next) => {
+    try {
+        var obj = {
+            nombreDelPlato: req.body.nombreDelPlato,
+            descripcion: req.body.descripcion,
+            precio: req.body.precio,
+        }
+        console.log(obj);
+
+        await menuSemanalModel.updatePlatoPrincipalById (obj, req.body.id);
+        res.redirect('/admin/menuSemanal');
+
+    } catch (error) {
+        console.log(error);
+        res.render('admin/modificar', {
+            layout: 'admin/layout',
+            error: true,
+            message: 'No se pudo realizar la modificación'
+        })
+    }
+})
+
 
 module.exports = router;
