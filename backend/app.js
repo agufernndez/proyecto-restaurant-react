@@ -5,13 +5,15 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 require('dotenv').config();
-var session = require('express-session')
-var fileupload = require('express-fileupload');
+var session = require('express-session');
+var fileUpload = require('express-fileupload');
+var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/menuSemanal');
+var apiRouter = require('./routes/api');
 
 
 
@@ -48,7 +50,7 @@ secured = async (req, res, next) => {
       } 
 }
 
-app.use(fileupload({
+app.use(fileUpload({
   useTempFiles: true,
   tempFileDir: '/tmp/'
 }));
@@ -57,6 +59,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/menuSemanal', secured, adminRouter);// poner 'secured' en esta linea es para que solo puedan acceder a la seccion de menuSemanal los usuarios que ingresaron sesion. si no ingresaron sesion y ponen /menuSemanal, los redirecciona automaticamente a /admin/login
+app.use('/api', cors(), apiRouter);
+
 
 
 // catch 404 and forward to error handler

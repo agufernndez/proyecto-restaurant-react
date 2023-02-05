@@ -16,6 +16,7 @@
           <th scope="col">#</th>
           <th scope="col">Nombre del Plato</th>
           <th scope="col">Descripción</th>
+          <th scope="col">Imagen</th>
           <th scope="col">Precio</th>
           <th scope="col">Acciones</th>
         </tr>
@@ -26,15 +27,16 @@
           <th scope="row">{{id}}</th>
           <td>{{nombreDelPlato}}</td>
           <td>{{descripcion}}</td>
+          <td>{{imagen}}</td>
           <td>${{precio}}</td>
           <td>
             <a href="/admin/menuSemanal/eliminar/{{id}}">
               <i class="fa-solid fa-trash"></i>
             </a>
-
             <a href="/admin/menuSemanal/modificar/{{id}}">
-              <i class="fa-solid fa-pen-to-square"></i></td>
+              <i class="fa-solid fa-pen-to-square"></i>
             </a>
+          </td>
         </tr>
         {{/each}}
       </tbody>

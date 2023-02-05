@@ -4,6 +4,17 @@
         <input type="text" name="nombreDelPlato" id="" value="{{menuSemanal.nombreDelPlato}}">
         {{!-- <input type="text" name="descripcion" id="" value="{{menuSemanal.descripcion}}"> --}}
         <textarea name="descripcion" id="" cols="30" rows="10">{{menuSemanal.descripcion}}</textarea>
+        
+        <label for="">Imagen: 
+            <input type="file" name="imagen" id="imagen" />
+        </label>
+        
+        <p>
+            <label for=""><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen actual?</label>
+            <input type="hidden" name="img_original" value="{{platoPrincipal.img_id}}">
+        </p>
+
+
         <input type="text" name="precio" id="" value="{{menuSemanal.precio}}">
         <button type="submit">Modificar</button>
 </form>
