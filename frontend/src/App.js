@@ -10,6 +10,7 @@ import Coctails from "./pages/Coctails/CoctailsPage"
 import Contactanos from "./pages/Contactanos/ContactanosPage"
 import Menu from "./pages/Menu/MenuPage"
 import MenuPrincipal from "./pages/MenuPrincipal/MenuPrincipalPage"
+import MenuSemanal from './pages/MenuSemanal/MenuSemanalPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/coctails" element={<Coctails/>}/>
           <Route path="/menu" element={<Menu/>}/>
           <Route path="/menuprincipal" element={<MenuPrincipal/>}/>
+          <Route path="/menusemanal" element={<MenuSemanal/>}/>
         </Routes>
         <HeaderFooter/> 
       </BrowserRouter>

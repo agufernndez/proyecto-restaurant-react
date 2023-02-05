@@ -1,0 +1,12 @@
+h1 {
+    font-size: 1rem; 
+}
+
+h2 {
+    width: 60vw;
+    padding-top: 8px;
+    font-size: 0.7rem;
+    opacity: 0.6; 
+    text-decoration: none;
+    text-align: left;
+}
