@@ -26,15 +26,15 @@ router.post('/', async (req, res, next) => {
             req.session.nombre = data.usuario;
             res.redirect('/admin/menuSemanal');
         } else {
-            res.render('./admin/login', {
-                layout: 'admin/login',
+            res.render('admin/login', {
+                layout: 'admin/layout',
                 error: true
             });
         }
     } catch (error) {
         console.log(error);
     }
-})
+});
 
 // logout
 router.get('/logout', function (req, res, next) {

@@ -1,45 +1,52 @@
-<h1>Menú semanal</h1>
-<div class="divLogin">
-    <p>Hola {{usuario}}.
-    <a href="/admin/login/logout" class="botonCerrarSesion">Cerrar Sesión</a>
-</div>
+<div class="divMenuSemanal">
 
-<div class="tituloTabla">
-    <h2>Platos principales</h2> 
-    <a href="/admin/menuSemanal/agregar" class="botonAgregarPlato">+ Agregar plato</a>
-</div>
+  <section class="section sectionMenuSombra">
+      <div>
+          <h2 class="h2Principal">Platos Principales</h2>
+          <h2 class="h2Sombra">Platos Principales</h2>
+      </div>
+  </section>
 
-<div class="divTabla">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Nombre del Plato</th>
-          <th scope="col">Descripción</th>
-          <th scope="col">Imagen</th>
-          <th scope="col">Precio</th>
-          <th scope="col">Acciones</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each menuSemanal}}
-        <tr>
-          <th scope="row">{{id}}</th>
-          <td>{{nombreDelPlato}}</td>
-          <td>{{descripcion}}</td>
-          <td>{{imagen}}</td>
-          <td>${{precio}}</td>
-          <td>
-            <a href="/admin/menuSemanal/eliminar/{{id}}">
-              <i class="fa-solid fa-trash"></i>
-            </a>
-            <a href="/admin/menuSemanal/modificar/{{id}}">
-              <i class="fa-solid fa-pen-to-square"></i>
-            </a>
-          </td>
-        </tr>
-        {{/each}}
-      </tbody>
-    </table>
+  <div class="saludoUsuario">
+      <p class="pSaludo">Hola {{usuario}}, bienvenidx al aministrador!</p>
+      <a href="/admin/login/logout" class="botonCerrarSesion">Cerrar Sesión</a>
+  </div>
+  
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" class="celdaTitulo">#</th>
+            <th scope="col" class="celdaTitulo">Nombre del Plato</th>
+            <th scope="col" class="celdaTitulo">Descripción</th>
+            <th scope="col" class="celdaTitulo" >Imagen</th>
+            <th scope="col" class="celdaTitulo">Precio</th>
+            <th scope="col" class="celdaTitulo">Acciones</th>
+          </tr>
+        </thead>
 
+        <tbody>
+          {{#each menuSemanal}}
+          <tr>
+            <td >{{id}}</td>
+            <td>{{nombreDelPlato}}</td>
+            <td>{{descripcion}}</td>
+            <td >{{imagen}}</td>
+            <td>${{precio}}</td>
+            <td>
+              <a href="/admin/menuSemanal/eliminar/{{id}}">
+                <i class="fa-solid fa-trash"></i>
+              </a>
+              <a href="/admin/menuSemanal/modificar/{{id}}">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </a>
+            </td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+
+
+  <div class="divBotonAgregar">
+      <a href="/admin/menuSemanal/agregar" class="botonAgregarPlato">+ Agregar plato</a>
+  </div>
 </div>

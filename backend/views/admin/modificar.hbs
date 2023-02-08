@@ -1,22 +1,34 @@
-<h2>Modificar Plato Principal</h2>
-<form action="/admin/menuSemanal/modificar" method="post" enctype="multipart/form-data">
-        <input type="hidden" value="{{menuSemanal.id}}" name="id">
-        <input type="text" name="nombreDelPlato" id="" value="{{menuSemanal.nombreDelPlato}}">
-        {{!-- <input type="text" name="descripcion" id="" value="{{menuSemanal.descripcion}}"> --}}
-        <textarea name="descripcion" id="" cols="30" rows="10">{{menuSemanal.descripcion}}</textarea>
-        
-        <label for="">Imagen: 
-            <input type="file" name="imagen" id="imagen" />
-        </label>
-        
-        <p>
-            <label for=""><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen actual?</label>
+
+<form action="/admin/menuSemanal/modificar" method="post" enctype="multipart/form-data" class="formLogin formModificar">
+
+    <h2 class="h2AgregarModificar h2modificar" >Modificar Plato Principal</h2>
+
+    <input type="hidden" value="{{menuSemanal.id}}" name="id">
+
+    <input type="text" name="nombreDelPlato" id="" value="{{menuSemanal.nombreDelPlato}}">
+
+    {{!-- <input type="text" name="descripcion" id="" value="{{menuSemanal.descripcion}}"> --}}
+
+    <textarea name="descripcion" id="" cols="30" rows="10">{{menuSemanal.descripcion}}</textarea>
+    
+    <input type="text" name="precio" id="" value="{{menuSemanal.precio}}">
+
+    <div class="formDivLabel">
+        <div>
+            <label for="" class="labelCheckbox">
+                <input type="checkbox" name="img_delete" id="img_delete" value="1" class="inputCheckbox">Eliminar imagen actual.
+            </label>
+
             <input type="hidden" name="img_original" value="{{platoPrincipal.img_id}}">
-        </p>
+        </div>
 
-
-        <input type="text" name="precio" id="" value="{{menuSemanal.precio}}">
-        <button type="submit">Modificar</button>
+        <label for="">Seleccionar nueva imagen: <br>
+            <input type="file" name="imagen" class="inputImg">
+        </label>
+    </div>
+    
+    
+    <button type="submit" class="buttonLogin">Modificar</button>
 </form>
 {{#if error}}
     <p>{{message}}</p>

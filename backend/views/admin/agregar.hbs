@@ -1,12 +1,21 @@
-<h2>Agregar Plato Principal</h2>
-<form action="/admin/menuSemanal/agregar" method="post" enctype="multipart/form-data">
-        <input type="text" name="nombreDelPlato" id="" placeholder="Nombre del Plato Principal">
-        <input type="text" name="descripcion" id="" placeholder="Descripción del Plato Principal">
-        <label for="">Imagen: 
-            <input type="file" name="imagen">
+
+<form action="/admin/menuSemanal/agregar" method="post" enctype="multipart/form-data" class="formLogin">
+
+    <h2 class="h2AgregarModificar">Agregar Plato Principal</h2>
+
+    <input type="text" name="nombreDelPlato" id="" placeholder="Nombre del Plato Principal">
+
+    <input type="text" name="descripcion" id="" placeholder="Descripción del Plato Principal">
+
+    <input type="text" name="precio" id="" placeholder="$">
+
+    <div class="formDivLabel">
+        <label for="">Imagen: <br>
+            <input type="file" name="imagen" class="inputImg">
         </label>
-        <input type="text" name="precio" id="" placeholder="$">
-        <button type="submit">Agregar</button>
+    </div>
+
+    <button type="submit" class="buttonLogin">Agregar</button>
 </form>
 {{#if error}}
     <p>{{message}}</p>

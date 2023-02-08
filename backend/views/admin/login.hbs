@@ -1,16 +1,13 @@
 
 <div class="divLogin">
-    <form action="/admin/login" method="post">
-        <label for="">Usuario</label>
+    <form action="/admin/login" method="post" class="formLogin">
         <input type="text" placeholder="Ingrese aquí su usuario" name="usuario">
         <br>
-        <label for="">Contraseña</label>
         <input type="text" placeholder="Ingrese aquí su contraseña" name="password">
         <br>
-        <button type="submit">Ingresar</button>
-    </form>
-
-    {{#if error}}
+        {{#if error}}
         <p class="datosIncorrectos">Tus datos no son validos. Por favor, vuelve a intentarlo.</p>
-    {{/if}}
+        {{/if}}
+        <button type="submit" class="buttonLogin">Ingresar</button>
+    </form>
 </div>
