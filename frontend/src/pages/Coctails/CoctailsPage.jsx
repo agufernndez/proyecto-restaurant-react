@@ -20,7 +20,7 @@ const CoctailsPage = () => {
                     </li>
                     <li> » </li>
                     <li>
-                        <Link to="/coctails">Vinos & Coctails</Link>   
+                        <Link to="/coctails" className='active'>Vinos & Coctails</Link>   
                     </li>
                     
                 </ul>

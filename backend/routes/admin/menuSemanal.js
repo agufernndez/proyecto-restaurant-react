@@ -14,7 +14,6 @@ router.get('/', async function (req, res, next) {
 
     let menuSemanal = await menuSemanalModel.getMenuSemanal();
     
-    // NO SE VISUALIZA LA IMAGEN EN EL NAVEGADOR, SOLO EL IMG_ID. CÓMO LO RESULVO?????/
     menuSemanal = menuSemanal.map(platoPrincipal => {
         if (platoPrincipal.img_id) {
             const imagen = cloudinary.image(platoPrincipal.img_id, {

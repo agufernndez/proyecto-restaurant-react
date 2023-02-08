@@ -7,12 +7,30 @@ const MenuItem = (props) => {
 
     return (
         <div className='menuSemanal'>
-            <h1>{title}</h1>
+            {/* <h1>{title}</h1>
             <h2>{description}</h2>
             <img src={imagen}/>
-            {/* <div dangerouslySetInnerHTML={{ ___html: }}></div> */}
-            <p>{price}</p>
+            
+            <p>{price}</p> */}
+
+
+    <section className=" sectionMenuesPrincipal">
+        <article className="articleMenuesPrincipal">
+            <section>
+                <div>
+                <h3>{title}</h3>
+                <h5>${price}</h5>
+                </div>
+                <h4>{description}</h4>
+            </section>
+            <figure>
+            <img src={imagen} className="imgMenuItem"/>
+            </figure>
+        </article>
+    </section>
         </div>
+
+
     )
 }
 

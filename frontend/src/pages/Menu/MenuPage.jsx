@@ -17,11 +17,11 @@ const MenuPage = () => {
                     </li>
                     <li> » </li>
                     <li>
-                        <Link to="/menu">Menu</Link>   
+                        <Link to="/menu" className='active'>Menu</Link>   
                     </li>
                     <li> » </li>
                     <li>
-                        <Link to="/menuPrincipal">Menu Principal</Link>   
+                        <Link to="/menusemanal">Menu Semanal</Link>   
                     </li>
                 </ul>
 

@@ -12,8 +12,6 @@ const HeaderFooter = () => {
                         <li><Link to="/menu">Menu</Link></li>
                         <li><Link to="/contactanos">Contactanos</Link></li>
                         <li><Link to="/coctails">Vinos & Coctails</Link></li>
-                        <li><Link to="/menusemanal">Menu Semanal</Link></li>
-
                 </ul>
             </footer>
         </div>
