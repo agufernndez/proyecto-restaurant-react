@@ -49,6 +49,7 @@ body {
 .datosIncorrectos {
   color: red;
   font-size: 16px;
+  text-align: center;
 }
 
 /* /admin/menuSemanal */
