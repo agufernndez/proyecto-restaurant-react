@@ -34,7 +34,7 @@ const MenuSemanal = (props) => {
             {loading ? (
                 <p>Cargando...</p>
             ) : (
-                MenuSemanal.map(item => <MenuItem key={item.id} title={item.nombreDelPlato} description={item.descripcion} imagen={item.img_id} price={item.precio}/>)
+                MenuSemanal.map(item => <MenuItem key={item.id} title={item.nombreDelPlato} description={item.descripcion} imagen={item.imagen} price={item.precio}/>)
             )}
         </section>
     )

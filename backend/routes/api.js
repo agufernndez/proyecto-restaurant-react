@@ -50,7 +50,7 @@ router.post('/contactanos', async (req, res) => {
 
       res.status(201).json({
         error: false,
-        message: 'Mensaje enviado!'
+        message: 'Tu consulta fue enviada. En la brevedad te estaremos respondiendo.'
       });
 });
 
