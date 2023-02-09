@@ -11,8 +11,8 @@ router.get('/menuSemanal', async function (req, res, next) {
     menuSemanal = menuSemanal.map(menuSemanal => {
         if (menuSemanal.img_id){
             const imagen = cloudinary.url(menuSemanal.img_id, {
-                width: 960,
-                height: 200,
+                width: 300,
+                height: 300,
                 crop: 'fill'
             });
             return {
