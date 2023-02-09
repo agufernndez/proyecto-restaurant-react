@@ -7,13 +7,23 @@ body {
 }
 
 /* PANTALLA PRINCIPAL */
+.mainIndex {
+  text-align: center;
+}
+
 .subtitulo {
   text-align: center;
   margin-top: 30vh;
   text-decoration: none;
   font-size: 40px;
   color: white;
+  margin-bottom: 50px;
 }
+
+.buttonIrAdmin {
+  padding: 10px;
+  margin-top: 20px;
+} 
 
 /* /admin/login */
 .formLogin {
