@@ -9,7 +9,6 @@ import HomePage from "./pages/Home/HomePage"
 import Coctails from "./pages/Coctails/CoctailsPage"
 import Contactanos from "./pages/Contactanos/ContactanosPage"
 import Menu from "./pages/Menu/MenuPage"
-import MenuPrincipal from "./pages/MenuPrincipal/MenuPrincipalPage"
 import MenuSemanal from './pages/MenuSemanal/MenuSemanalPage';
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
           <Route path="/contactanos" element={<Contactanos/>}/>
           <Route path="/coctails" element={<Coctails/>}/>
           <Route path="/menu" element={<Menu/>}/>
-          <Route path="/menuprincipal" element={<MenuPrincipal/>}/>
           <Route path="/menusemanal" element={<MenuSemanal/>}/>
         </Routes>
         <HeaderFooter/> 

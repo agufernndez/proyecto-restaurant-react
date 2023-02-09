@@ -106,21 +106,6 @@ const HomePage = () => {
                     </div>
                 </section>
 
-                <section className="section sectionGaleriaFotos">
-                    <div>
-                    <h2>Galeria de Fotos</h2>
-                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat massa, et condimentum nunc. Praesent consectetur lorem in efficitur dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed lobortis egestas cursus. Vestibulum faucibus molestie est, ac efficitur ex ullamcorper a.</p> -->
-                    </div>
-                    <div className="sectionGaleriaFotos__carrousel">
-                    <img src="./assets/icon/leftMenu.svg" alt="flecha izquierda" className="flecha"/>
-                    <img src="./assets/img/index/galleryCenter.jpg" alt="Foto Galeria 1" className="galeriaFoto1"/>
-                    <img src="./assets/icon/rightMenu.svg" alt="flecha derecha" className="flecha"/>
-                    <!-- <img src="./assets/img/index/galleryCenter.jpg" alt="Foto Galeria 2"/>
-                    <img src="./assets/img/index/galleryRight.jpg" alt="Foto Galeria 3"/> */}
-
-                    </div>
-                </section>
-
                 <Reservar/>
 
                 <section className="section sectionContactanos">

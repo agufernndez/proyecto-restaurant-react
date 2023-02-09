@@ -1,3 +1,45 @@
+/* MAIN */
+
+/* section titulo */
+
+.sectionTitulo {
+    height: 35vh;
+    background-image: url("../../../public/assets/img/menu/sectionTitulo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+/* section links */
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+a {
+    color: var(--blanco);
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.active {
+    color: var(--marron);
+    text-decoration: underline;
+}
+
+/* section menu sombra */
+.sectionMenuSombra div {
+    margin-top: 40px;
+    height: 5vh;
+}
+
 .h2Principal {
     text-decoration: underline;
     color: var(--marron);
@@ -12,5 +54,36 @@
     position: relative;
     bottom: 80px;
     text-align: left;
+
 }
 
+/* section menues principal */
+.sectionMenuesPrincipal article {
+    margin-bottom: 30px;
+}
+
+.sectionMenuesPrincipal article div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--marron);
+    padding-bottom: 8px;
+}
+
+.sectionMenuesPrincipal article div h3 {
+    font-size: 1rem; 
+
+}
+
+.sectionMenuesPrincipal article div h5 {
+    font-size: 0.9rem;
+    color: #B5986D;
+
+}
+
+.sectionMenuesPrincipal article h4 {
+    width: 60vw;
+    padding-top: 8px;
+    font-size: 0.7rem;
+    opacity: 0.6; 
+}

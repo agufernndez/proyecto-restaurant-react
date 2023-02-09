@@ -45,7 +45,7 @@ const MenuPage = () => {
 
                     <article>
                         <figure>
-                            <img src="../../../assets/img/menu/menuDesayuno.jpg" alt=""/>
+                            <img src="../../../assets/img/menu/desayunos2.jpg" alt=""/>
                         </figure>
                         <div>
                             <h3>Desayuno</h3>
