@@ -27,8 +27,10 @@
         </label>
     </div>
     
-    
-    <button type="submit" class="buttonLogin">Modificar</button>
+    <div class="divButtons">
+        <a href="/admin/menuSemanal" class="buttonLogin buttonCancelar" id="buttonAgregarCancelar">Cancelar</a>
+        <button type="submit" class="buttonLogin" id="buttonAgregarCancelar">Modificar</button>
+    </div>
 </form>
 {{#if error}}
     <p>{{message}}</p>

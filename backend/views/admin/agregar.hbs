@@ -14,8 +14,10 @@
             <input type="file" name="imagen" class="inputImg">
         </label>
     </div>
-
-    <button type="submit" class="buttonLogin">Agregar</button>
+    <div class="divButtons">
+        <a href="/admin/menuSemanal" class="buttonLogin buttonCancelar" id="buttonAgregarCancelar">Cancelar</a>
+        <button type="submit" class="buttonLogin" id="buttonAgregarCancelar">Agregar</button>
+    </div>
 </form>
 {{#if error}}
     <p>{{message}}</p>
